@@ -1,0 +1,67 @@
+//
+// blog.scss
+//
+
+/*********************************/
+/*         Blog & News           */
+/*===============================*/
+.section-title .text-center img.img-fluid {
+  max-width: 50%;
+}
+
+/* // for single page top paddding */
+.bg_half_toku {
+  padding: 100px 0 90px;
+  @include home-common();
+}
+
+/* //page nation */
+.page-numbers {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.page-numbers > li > a {
+  color: #3c4858;
+  border: 1px solid #dee2e6;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.page-numbers > li > .current {
+  border: 1px solid #dee2e6;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #2f55d4 !important;
+  color: #dee2e6;
+}
+
+.page-numbers.current .page-numbers:hover,
+::selection {
+  background: rgba(47, 85, 212, 0.9);
+  border-color: rgba(47, 85, 212, 0.9);
+}
+
+.justify-content-center > ul {
+  justify-content: center;
+}
+
+/* // ブログ記事の中 */
+.section-title div h2 {
+  margin-top: 3rem;
+  border-left: 10px solid #2f55d4;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.wp-block-image img {
+  object-fit: contain;
+}
+
+/* // happy_cliend */
+
+.flex-1.content.rounded.bg-white.position-relative > p {
+  color: #8492a6 !important;
+  font-size: 16px;
+}

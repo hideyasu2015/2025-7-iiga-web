@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Connect.co,Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="株式会社　イイガ" />
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <!-- tobii css -->
+  <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+  <!-- Icons -->
+  <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+  <!-- Slider -->
+  <link rel="stylesheet" href="css/tiny-slider.css" />
+  <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+  <!-- Main Css -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+  <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+</head>
+
+<body>
+  <!-- Loader -->
+  <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+  <!-- Loader -->
+
+  <!-- Navbar STart -->
+  <header id="topnav" class="defaultscroll sticky">
+    <div class="container">
+      <!-- Logo container-->
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-light-mode">
+            <img src="images/logo-dark.png" class="l-dark" height="24" alt="">
+            <img src="images/logo-light.png" class="l-light" height="24" alt="">
+          </span>
+          <img src="images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+        </a>
+      </div>
+      <!--end login button-->
+
+      <!-- End Logo container-->
+      <div class="menu-extras">
+        <div class="menu-item">
+          <!-- Mobile menu toggle-->
+          <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+            <div class="lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+          <!-- End mobile menu toggle-->
+        </div>
+      </div>
+
+      <div id="navigation">
+        <!-- Navigation Menu-->
+        <ul class="navigation-menu nav-light">
+          <li><a href="index.html" class="sub-menu-item">Home</a></li>
+          <li><a href="category-iphone.html" class="sub-menu-item">iPhone APP</a></li>
+          <li><a href="category-swift.html" class="sub-menu-item">Blog</a></li>
+          <li><a href="contact.html" class="sub-menu-item">Contact Us</a></li>
+
+        </ul>
+        <!--end navigation menu-->
+
+        <!--end login button-->
+      </div>
+      <!--end navigation-->
+    </div>
+    <!--end container-->
+  </header>
+  <!--end header-->
+  <!-- Navbar End -->
+
+  <!-- start Slider -->
+  <section class="swiper-slider-hero position-relative d-block vh-100" id="home">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide d-flex align-items-center overflow-hidden">
+          <!-- todo -->
+          <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+            data-background="<?php echo get_template_directory_uri(); ?>/images/connect/top_1.jpg">
+
+            <video playsinline autoplay muted loop class="background-video"
+              poster="<?php echo get_template_directory_uri(); ?>/images/connect/top_1.jpg">
+              <source src="<?php echo get_template_directory_uri(); ?>/videos/your-video.mp4" type="video/mp4">
+              お使いのブラウザは動画タグに対応していません。
+            </video>
+
+            <div class="bg-overlay"></div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="title-heading text-center">
+                    <h1 class="heading text-white title-dark mb-4">
+                      クラウド・AI・MaaS時代の
+                      "モビリティ&コミュニケーション"
+                      を加速。<br>
+                    </h1>
+                    <p class="para-desc mx-auto text-white-50">
+                      AI駆動開発からオンデマンド交通まで、 次世代モビリティサービスの構築を支援します。
+                    </p>
+
+                    <div class="mt-4 pt-2">
+                      <a href="javascript:void(0)" class="btn btn-primary">Contact us</a>
+                    </div>
+                  </div>
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </div>
+            <!--end container-->
+          </div><!-- end slide-inner -->
+        </div> <!-- end swiper-slide -->
+
+        <div class="swiper-slide d-flex align-items-center overflow-hidden">
+          <div class="slide-inner slide-bg-image d-flex align-items-center" style="background: center center;"
+            data-background="<?php echo get_template_directory_uri(); ?>/images/connect/top_2.jpg">
+            <div class="bg-overlay"></div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="title-heading text-center">
+                    <h1 class="heading text-white title-dark mb-4">Meet Connect<br> Meet new
+                      solution
+                    </h1>
+                    <p class="para-desc mx-auto text-white-50">
+
+                      マネジメントとは、人に関わることであり、善悪に関わることである。- P.F.ドラッカー</p>
+
+                    <div class="mt-4 pt-2">
+                      <a href="javascript:void(0)" class="btn btn-primary">Get Started</a>
+                    </div>
+                  </div>
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </div>
+            <!--end container-->
+          </div><!-- end slide-inner -->
+        </div> <!-- end swiper-slide -->
+      </div>
+      <!-- end swiper-wrapper -->
+
+      <!-- swipper controls -->
+      <!-- <div class="swiper-pagination"></div> -->
+      <div class="swiper-button-next border rounded-circle text-center"></div>
+      <div class="swiper-button-prev border rounded-circle text-center"></div>
+    </div>
+    <!--end container-->
+  </section>
+  <!--end Slider -->
+
+
+
+  <!-- what we do-->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h4 class="title mb-4">What we do ?</h4>
+            <p class="text-muted para-desc mb-0 mx-auto">
+              コネクトは、お客様が必要とする、IT部門人材育成のすべてを提供します。
+            </p>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+
+      <div class="row">
+        <div class="col-md-4 mt-4 pt-2">
+          <div
+            class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+            <span class="h1 icon2 text-primary">
+              <i class="uil uil-chart-line"></i>
+            </span>
+            <div class="card-body p-0 content">
+              <h5>Hign Performance</h5>
+              <p class="para text-muted mb-0">IT部門の人材育成をサポートします</p>
+            </div>
+            <span class="big-icon text-center">
+              <i class="uil uil-chart-line"></i>
+            </span>
+          </div>
+        </div>
+        <!--end col-->
+
+
+        <div class="col-md-4 mt-4 pt-2">
+          <div
+            class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+            <span class="h1 icon2 text-primary">
+              <i class="uil uil-airplay"></i>
+            </span>
+            <div class="card-body p-0 content">
+              <h5>Trusted Service</h5>
+              <p class="para text-muted mb-0">必要なときは人員を補充します</p>
+            </div>
+            <span class="big-icon text-center">
+              <i class="uil uil-airplay"></i>
+            </span>
+          </div>
+        </div>
+        <!--end col-->
+
+        <div class="col-md-4 mt-4 pt-2">
+          <div
+            class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+            <span class="h1 icon2 text-primary">
+              <i class="uil uil-rocket"></i>
+            </span>
+            <div class="card-body p-0 content">
+              <h5>Info Technology</h5>
+              <p class="para text-muted mb-0">新しい技術を常にフォローしています。</p>
+            </div>
+            <span class="big-icon text-center">
+              <i class="uil uil-rocket"></i>
+            </span>
+          </div>
+        </div>
+        <!--end col-->
+
+        <div class="col-md-4 mt-4 pt-2">
+          <div
+            class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+            <span class="h1 icon2 text-primary">
+              <i class="uil uil-clock"></i>
+            </span>
+            <div class="card-body p-0 content">
+              <h5>Support</h5>
+              <p class="para text-muted mb-0">中小企業を主にサポートします</p>
+            </div>
+            <span class="big-icon text-center">
+              <i class="uil uil-clock"></i>
+            </span>
+          </div>
+        </div>
+        <!--end col-->
+
+        <div class="col-md-4 mt-4 pt-2">
+          <div
+            class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+            <span class="h1 icon2 text-primary">
+              <i class="uil uil-users-alt"></i>
+            </span>
+            <div class="card-body p-0 content">
+              <h5>IT Management</h5>
+              <p class="para text-muted mb-0">IT専門の部門がなくても大丈夫です</p>
+            </div>
+            <span class="big-icon text-center">
+              <i class="uil uil-users-alt"></i>
+            </span>
+          </div>
+        </div>
+        <!--end col-->
+
+
+
+        <div class="col-md-4 mt-4 pt-2">
+          <div
+            class="card features fea-primary rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
+            <span class="h1 icon2 text-primary">
+              <i class="uil uil-search"></i>
+            </span>
+            <div class="card-body p-0 content">
+              <h5>Data Analytics</h5>
+              <p class="para text-muted mb-0">SEO内部対策もいたします</p>
+            </div>
+            <span class="big-icon text-center">
+              <i class="uil uil-search"></i>
+            </span>
+          </div>
+        </div>
+        <!--end col-->
+
+        <div class="col-lg-12 text-center col-md-4 mt-4 pt-2">
+          <a href="javascript:void(0)" class="btn btn-primary">See more <i data-feather="arrow-right"
+              class="fea icon-sm"></i></a>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+
+    <!-- About Start -->
+    <div class="container mt-100 mt-60">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-6 mt-4 mt-lg-0 pt-2 pt-lg-0">
+              <div class="card work-container work-modern overflow-hidden rounded border-0 shadow-md">
+                <div class="card-body p-0">
+                  <img src="images/connect/hide.jpeg" class="img-fluid" alt="work-image">
+                  <div class="overlay-work bg-dark"></div>
+                  <div class="content">
+                    <a href="javascript:void(0)" class="title text-white d-block fw-bold">
+                      Tokuhara</a>
+                    <small class="text-light">IT Management & Swift</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end col-->
+
+            <div class="col-lg-6 col-6">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                  <div class="card work-container work-modern overflow-hidden rounded border-0 shadow-md">
+                    <div class="card-body p-0">
+                      <img src="images/connect/eddy.jpg" class="img-fluid" alt="work-image">
+                      <div class="overlay-work bg-dark"></div>
+                      <div class="content">
+                        <a href="javascript:void(0)" class="title text-white d-block fw-bold">Eddy</a>
+                        <small class="text-light">iOS C++ Engineer</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                  <div class="card work-container work-modern overflow-hidden rounded border-0 shadow-md">
+                    <div class="card-body p-0">
+                      <img src="images/connect/chuang.jpg" class="img-fluid" alt="work-image">
+                      <div class="overlay-work bg-dark"></div>
+                      <div class="content">
+                        <a href="javascript:void(0)" class="title text-white d-block fw-bold">Chuang</a>
+                        <small class="text-light">Python Ai Engineer</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+        </div>
+        <!--end col-->
+
+        <div class="col-lg-6 col-md-6 mt-4 mt-lg-0 pt- pt-lg-0">
+          <div class="ms-lg-4">
+            <div class="section-title mb-4 pb-2">
+              <h4 class="title mb-4">About Our Story</h4>
+              <p class="text-muted para-desc">コネクトは、IT人材の育成における全面的なサポートを提供しています。
+              </p>
+              <p class="text-muted para-desc mb-0">システム開発部門を持たないデザイン会社や、海外新出サポートコンサルタント会社のIT部分のサポート等を
+                しております。
+              </p>
+            </div>
+
+            <ul class="list-unstyled text-muted">
+              <li class="mb-0"><span class="text-primary h4 me-2"><i
+                    class="uil uil-check-circle align-middle"></i></span>IT人材サポート</li>
+              <li class="mb-0"><span class="text-primary h4 me-2"><i
+                    class="uil uil-check-circle align-middle"></i></span>WEBデザイン</li>
+              <li class="mb-0"><span class="text-primary h4 me-2"><i
+                    class="uil uil-check-circle align-middle"></i></span>スマホアプリ開発</li>
+            </ul>
+
+            <div class="mt-4 pt-2">
+              <a href="https://1.envato.market/4n73n" target="_blank" class="btn btn-primary m-1">Read
+                More <i class="uil uil-angle-right-b align-middle"></i></a>
+              <a href="#!" data-type="youtube" data-id="1xsv7cVmv6U"
+                class="btn btn-icon btn-pills btn-primary m-1 lightbox"><i data-feather="video"
+                  class="icons"></i></a><span class="fw-bold text-uppercase small align-middle ms-1">Watch Now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </section>
+  <!--end section-->
+
+
+
+
+  <section class="section">
+    <div class="container">
+      <div class="row mt-lg-4 align-items-center">
+        <div class="col-lg-5 col-md-12 text-center text-lg-start">
+          <div class="section-title mb-4 mb-lg-0 pb-2 pb-lg-0">
+            <h4 class="title mb-4">Our Consulting Charge</h4>
+            <p class="text-muted para-desc mx-auto mb-0">
+              コネクトは、システム開発部を持たない会社をサポートしています。ペアプログラミング等
+              を用いて人材育成もしております。</p>
+            <a href="https://1.envato.market/4n73n" target="_blank" class="btn btn-primary mt-4">今すぐ相談する
+            </a>
+          </div>
+        </div>
+        <!--end col-->
+
+        <div class="col-lg-7 col-md-12">
+          <div class="ms-lg-5">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-12 mt-4 pt-4 px-md-0">
+                <div class="card pricing-rates starter-plan shadow rounded border-0">
+                  <div class="card-body py-5">
+                    <h6 class="title fw-bold text-uppercase text-primary mb-4">Starter</h6>
+                    <div class="d-flex mb-4">
+                      <span class="h4 mb-0 mt-2"></span>
+                      <span class="price h1 mb-0">39</span>
+                      <span class="h4 align-self-end mb-1">/mo</span>
+                    </div>
+
+                    <ul class="list-unstyled mb-0 ps-0">
+                      <li class="h6 text-muted mb-0"><span class="text-primary h5 me-2"><i
+                            class="uil uil-check-circle align-middle"></i></span>WEB デザイン
+                      </li>
+                      <li class="h6 text-muted mb-0"><span class="text-primary h5 me-2"><i
+                            class="uil uil-check-circle align-middle"></i></span>SEO対策
+                      </li>
+                      <li class="h6 text-muted mb-0"><span class="text-primary h5 me-2"><i
+                            class="uil uil-check-circle align-middle"></i></span>コンテンツ作成
+                      </li>
+                      <li class="h6 text-muted mb-0"><span class="text-primary h5 me-2"><i
+                            class="uil uil-check-circle align-middle"></i></span>社内システム開発
+                      </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn-primary mt-4">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              <!--end col-->
+
+              <div class="col-md-6 col-12 mt-4 pt-2 pt-md-4 px-md-0">
+                <div class="card pricing-rates bg-light shadow rounded border-0">
+                  <div class="card-body py-5">
+                    <h6 class="title fw-bold text-uppercase text-primary mb-4">Professional</h6>
+                    <div class="d-flex mb-4">
+                      <span class="h4 mb-0 mt-2"></span>
+                      <span class="price h1 mb-0">59</span>
+                      <span class="h4 align-self-end mb-1">/mo</span>
+                    </div>
+
+                    <ul class="list-unstyled mb-0 ps-0">
+                      <li class="h6 text-muted mb-0"><span class="text-primary h5 me-2"><i
+                            class="uil uil-check-circle align-middle"></i></span>WEBデザイン
+                      </li>
+                      <li class="h6 text-muted mb-0"><span class="text-primary h5 me-2"><i
+                            class="uil uil-check-circle align-middle"></i></span>SEO内部対策
+                      </li>
+                      <li class="h6 text-muted mb-0"><span class="text-primary h5 me-2"><i
+                            class="uil uil-check-circle align-middle"></i></span>IT人材育成
+                      </li>
+                      <li class="h6 text-muted mb-0"><span class="text-primary h5 me-2"><i
+                            class="uil uil-check-circle align-middle"></i></span>ペアプログラミング
+                      </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn-primary mt-4">Try it now</a>
+                  </div>
+                </div>
+              </div>
+              <!--end col-->
+            </div>
+            <!--end row-->
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+
+
+    <!-- happy client -->
+    <div class="container mt-100 mt-60">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h4 class="title mb-4">Our Clients Said</h4>
+            <p class="text-muted para-desc mx-auto mb-0">
+              コネクトと一緒に働く皆様の声</p>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-12 mt-4">
+          <div class="tiny-three-item">
+            <div class="tiny-slide">
+              <div class="d-flex client-testi m-2">
+                <img src="images/client/01.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                  <ul class="list-unstyled mb-0">
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                  </ul>
+                  <p class="text-muted mt-2">" It seems that only fragments of the original text
+                    remain in the Lorem Ipsum texts used today. "</p>
+                  <h6 class="text-primary">- Thomas Israel <small class="text-muted">C.E.O</small>
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="tiny-slide">
+              <div class="d-flex client-testi m-2">
+                <img src="images/client/02.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                  <ul class="list-unstyled mb-0">
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star-half text-warning"></i></li>
+                  </ul>
+                  <p class="text-muted mt-2">" One disadvantage of Lorum Ipsum is that in Latin
+                    certain letters appear more frequently than others. "</p>
+                  <h6 class="text-primary">- Barbara McIntosh <small class="text-muted">M.D</small>
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="tiny-slide">
+              <div class="d-flex client-testi m-2">
+                <img src="images/client/03.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                  <ul class="list-unstyled mb-0">
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                  </ul>
+                  <p class="text-muted mt-2">" The most well-known dummy text is the 'Lorem Ipsum',
+                    which is said to have originated in the 16th century. "</p>
+                  <h6 class="text-primary">- Carl Oliver <small class="text-muted">P.A</small></h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="tiny-slide">
+              <div class="d-flex client-testi m-2">
+                <img src="images/client/04.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                  <ul class="list-unstyled mb-0">
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                  </ul>
+                  <p class="text-muted mt-2">" According to most sources, Lorum Ipsum can be traced
+                    back to a text composed by Cicero. "</p>
+                  <h6 class="text-primary">- Christa Smith <small class="text-muted">Manager</small>
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="tiny-slide">
+              <div class="d-flex client-testi m-2">
+                <img src="images/client/05.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                  <ul class="list-unstyled mb-0">
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                  </ul>
+                  <p class="text-muted mt-2">" There is now an abundance of readable dummy texts.
+                    These are usually used when a text is required. "</p>
+                  <h6 class="text-primary">- Dean Tolle <small class="text-muted">Developer</small>
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="tiny-slide">
+              <div class="d-flex client-testi m-2">
+                <img src="images/client/06.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                  <ul class="list-unstyled mb-0">
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                  </ul>
+                  <p class="text-muted mt-2">" Thus, Lorem Ipsum has only limited suitability as a
+                    visual filler for German texts. "</p>
+                  <h6 class="text-primary">- Jill Webb <small class="text-muted">Designer</small></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end happy client -->
+
+
+    <!-- Blog section -->
+    <div class="container mt-100 mt-60">
+      <div class="row align-items-center mb-4 pb-2">
+        <div class="col-lg-6">
+          <div class="section-title text-center text-lg-start">
+            <h6 class="text-primary">Blog</h6>
+            <h4 class="title mb-4 mb-lg-0">Reads Our Latest <br> News & Blog</h4>
+          </div>
+        </div>
+        <!--end col-->
+
+        <div class="col-lg-6">
+          <div class="section-title text-center text-lg-start">
+            <p class="text-muted mb-0 mx-auto para-desc">コネクトは、システム開発部を持たない会社をサポートしています。ペアプログラミング等
+              を用いて人材育成もしております。</p>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card blog rounded border-0 shadow">
+            <div class="position-relative">
+              <img src="images/blog/01.jpg" class="card-img-top rounded-top" alt="...">
+              <div class="overlay rounded-top bg-dark"></div>
+            </div>
+            <div class="card-body content">
+              <h5><a href="javascript:void(0)" class="card-title title text-dark">Design your apps in your
+                  own way</a></h5>
+              <div class="post-meta d-flex justify-content-between mt-3">
+                <ul class="list-unstyled mb-0">
+                  <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i
+                        class="uil uil-heart me-1"></i>33</a></li>
+                  <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i
+                        class="uil uil-comment me-1"></i>08</a></li>
+                </ul>
+                <a href="page-blog-detail.html" class="text-muted readmore">Read More <i
+                    class="uil uil-angle-right-b align-middle"></i></a>
+              </div>
+            </div>
+            <div class="author">
+              <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+              <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August,
+                2019</small>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card blog rounded border-0 shadow">
+            <div class="position-relative">
+              <img src="images/blog/02.jpg" class="card-img-top rounded-top" alt="...">
+              <div class="overlay rounded-top bg-dark"></div>
+            </div>
+            <div class="card-body content">
+              <h5><a href="javascript:void(0)" class="card-title title text-dark">How apps is changing the
+                  IT world</a></h5>
+              <div class="post-meta d-flex justify-content-between mt-3">
+                <ul class="list-unstyled mb-0">
+                  <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i
+                        class="uil uil-heart me-1"></i>33</a></li>
+                  <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i
+                        class="uil uil-comment me-1"></i>08</a></li>
+                </ul>
+                <a href="page-blog-detail.html" class="text-muted readmore">Read More <i
+                    class="uil uil-angle-right-b align-middle"></i></a>
+              </div>
+            </div>
+            <div class="author">
+              <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+              <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August,
+                2019</small>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+
+        <div class="col-lg-4 col-md-6 mt-4 pt-2">
+          <div class="card blog rounded border-0 shadow">
+            <div class="position-relative">
+              <img src="images/blog/03.jpg" class="card-img-top rounded-top" alt="...">
+              <div class="overlay rounded-top bg-dark"></div>
+            </div>
+            <div class="card-body content">
+              <h5><a href="javascript:void(0)" class="card-title title text-dark">Smartest Applications
+                  for Business</a></h5>
+              <div class="post-meta d-flex justify-content-between mt-3">
+                <ul class="list-unstyled mb-0">
+                  <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i
+                        class="uil uil-heart me-1"></i>33</a></li>
+                  <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i
+                        class="uil uil-comment me-1"></i>08</a></li>
+                </ul>
+                <a href="page-blog-detail.html" class="text-muted readmore">Read More <i
+                    class="uil uil-angle-right-b align-middle"></i></a>
+              </div>
+            </div>
+            <div class="author">
+              <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+              <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August,
+                2019</small>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </section>
+  <!--end section-->
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+          <a href="#" class="logo-footer">
+            <img src="images/connect/logo_with_mail.png" width="300" alt="">
+          </a>
+          <p class="mt-4">コネクトは、システム開発部を持たない会社をサポートしています。ペアプログラミング等
+            を用いて人材育成もしております。</p>
+          <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook"
+                  class="fea icon-sm fea-social"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram"
+                  class="fea icon-sm fea-social"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter"
+                  class="fea icon-sm fea-social"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin"
+                  class="fea icon-sm fea-social"></i></a></li>
+          </ul>
+          <!--end icon-->
+        </div>
+        <!--end col-->
+
+        <div class="col-md-3 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <h5 class="text-light footer-head">Nav Menu</h5>
+          <ul class="list-unstyled footer-list mt-4">
+            <li><a href="page-aboutus.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                About us</a></li>
+            <li><a href="page-services.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Services</a></li>
+            <li><a href="page-team.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Team</a></li>
+            <li><a href="page-pricing.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Pricing</a></li>
+            <li><a href="portfolio-modern-three.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Project</a></li>
+            <li><a href="page-jobs.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Careers</a></li>
+            <li><a href="page-blog-grid.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Blog</a></li>
+            <li><a href="auth-cover-login.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Login</a></li>
+          </ul>
+        </div>
+        <!--end col-->
+
+        <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <h5 class="text-light footer-head">Recent Post</h5>
+          <ul class="list-unstyled footer-list mt-4">
+            <li><a href="page-terms.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i> Terms
+                of Services</a></li>
+            <li><a href="page-privacy.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Privacy Policy</a></li>
+            <li><a href="documentation.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Documentation</a></li>
+            <li><a href="changelog.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Changelog</a></li>
+            <li><a href="components.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Components</a></li>
+          </ul>
+        </div>
+        <!--end col-->
+
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </footer>
+  <!--end footer-->
+  <footer class="footer footer-bar">
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col-sm-12">
+          <div class="text-sm-start">
+            <p class="mb-0">©2021 Connect.co, Ltd
+            </p>
+          </div>
+        </div>
+        <!--end col-->
+
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </footer>
+  <!--end footer-->
+  <!-- Footer End -->
+
+  <!-- Back to top -->
+  <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i
+      data-feather="arrow-up" class="icons"></i></a>
+  <!-- Back to top -->
+
+
+
+  <!-- javascript -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- SLIDER -->
+  <script src="js/tiny-slider.js "></script>
+  <script src="js/swiper.min.js"></script>
+  <!-- tobii js -->
+  <script src="js/tobii.min.js "></script>
+  <!-- Icons -->
+  <script src="js/feather.min.js"></script>
+  <!-- Main Js -->
+  <script src="js/plugins.init.js"></script>
+  <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+  <script src="js/app.js"></script>
+  <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+</body>
+
+</html>
