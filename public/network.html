@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>株式会社 イイガ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="株式会社 イイガ" />
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <!-- tobii css -->
+  <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+  <!-- Icons -->
+  <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+  <!-- Slider -->
+  <link rel="stylesheet" href="css/tiny-slider.css" />
+  <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+  <!-- Main Css -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+  <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+</head>
+
+<body>
+  <!-- Loader -->
+  <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+  <!-- Loader -->
+
+  <!-- Navbar STart -->
+  <header id="topnav" class="defaultscroll sticky">
+    <div class="container">
+      <!-- Logo container-->
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-light-mode">
+            <img src="images/header/iiga-logo-black.png" class="l-dark" height="36" alt="">
+            <img src="images/header/iiga-logo-white.png" class="l-light" height="36" alt="">
+          </span>
+          <img src="images/header/iiga-logo-white.png" height="36" class="logo-dark-mode" alt="">
+        </a>
+      </div>
+      <!--end login button-->
+
+      <!-- End Logo container-->
+      <div class="menu-extras">
+        <div class="menu-item">
+          <!-- Mobile menu toggle-->
+          <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+            <div class="lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+          <!-- End mobile menu toggle-->
+        </div>
+      </div>
+
+      <div id="navigation">
+        <!-- Navigation Menu-->
+        <ul class="navigation-menu nav-light">
+          <li><a href="index.html" class="sub-menu-item">Home</a></li>
+          <li><a href="category-iphone.html" class="sub-menu-item">ネットワーク管理</a></li>
+          <li><a href="category-swift.html" class="sub-menu-item">システム開発</a></li>
+          <li><a href="hardware.html" class="sub-menu-item">ハードウエア開発</a></li>
+
+        </ul>
+        <!--end navigation menu-->
+
+        <!--end login button-->
+      </div>
+      <!--end navigation-->
+    </div>
+    <!--end container-->
+  </header>
+  <!--end header-->
+
+  <!-- Navbar End -->
+
+  <!-- Hero Start -->
+  <section class="bg-half-170 d-table w-100 it-home"
+    style="background: url('images/top-pages/top-2.png') center center;">
+    <div class="bg-overlay"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-md-6 col-12">
+          <div class="title-heading">
+            <h6 class="text-white-50">
+              ネットワーク管理システム事業
+
+            </h6>
+            <h1 class="fw-bold text-white title-dark mt-2 mb-3">
+              25年稼働の設計力で、<br>
+              次世代ネットワークを
+              "自動化"する。
+            </h1>
+            <p class="para-desc text-white-50">
+              時間軸オブジェクトデータベースとオーケストレーションシステムで、 ネットワーク設計から運用まで一元管理を実現します。
+            </p>
+            <div class="mt-4 pt-2">
+              <a href="javascript:void(0)" class="btn btn-primary m-1"><i class="uil uil-phone"></i> Get in touch</a>
+              <a href="#!" data-type="youtube" data-id="yba7hPeTSjk"
+                class="btn btn-icon btn-pills btn-primary m-1 lightbox"><i data-feather="video"
+                  class="icons"></i></a><small
+                class="fw-bold text-uppercase text-light title-dark align-middle ms-1">Watch Now</small>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-5 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+          <div class="card shadow rounded border-0 ms-lg-5">
+            <img src="images/network/network-illust.jpeg" class="img-fluid work-image" alt="">
+            <!-- <div class="card-body"> -->
+            <!-- todo 文字とフォームを追加できる -->
+            <!-- <h5 class="card-title fw-bold">Register Your Appointment</h5>
+              <h6>We here to help you 24/7 with experts</h6> -->
+
+            <!-- <form class="login-form">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <label class="form-label">First name <span class="text-danger">*</span></label>
+                      <div class="form-icon position-relative">
+                        <i data-feather="user" class="fea icon-sm icons"></i>
+                        <input type="text" class="form-control ps-5" placeholder="First Name" name="s" required="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                      <div class="form-icon position-relative">
+                        <i data-feather="mail" class="fea icon-sm icons"></i>
+                        <input type="email" class="form-control ps-5" placeholder="Email" name="email" required="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <label class="form-label">Phone no. <span class="text-danger">*</span></label>
+                      <div class="form-icon position-relative">
+                        <i data-feather="phone" class="fea icon-sm icons"></i>
+                        <input type="number" name="number" class="form-control ps-5" placeholder="Phone no."
+                          required="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        I Accept <a href="#" class="text-primary">Terms And Condition</a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="d-grid">
+                      <button class="btn btn-primary">Register</button>
+                    </div>
+                  </div>
+                </div>
+              </form> -->
+            <!-- </div> -->
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div> <!--end container-->
+  </section><!--end section-->
+  <!-- End Hero -->
+
+  <!-- Start 解決課題-->
+  <section class="py-4 bg-light pt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-12">
+          <h3>
+            解決する課題
+          </h3>
+        </div>
+        <div class="col-md-6 col-12">
+          <h3>
+            ソリューション
+          </h3>
+        </div>
+
+      </div>
+
+      <!-- row -->
+      <div class="row justify-content-center">
+        <!-- col -->
+        <div class="col-md-6 col-12">
+          <div class="d-flex features pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-analytics text-primary"></i>
+            </div>
+            <div class="flex-1">
+              <h4 class="title">設計書作成の工数増大</h4>
+              <p class="text-muted para mb-0">
+                複雑化するネットワーク設計により、設計書作成に膨大な時間がかかっている
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+
+        <!-- col -->
+        <div class="col-md-6 col-12">
+          <div class="d-flex features pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-analytics text-primary"></i>
+            </div>
+            <div class="flex-1">
+              <h4 class="title">時間軸オブジェクトDB</h4>
+              <p class="text-muted para mb-0">
+                全履歴を時系列で管理し、設計書作成を自動化
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+
+
+      </div><!--end row-->
+
+      <!-- row -->
+      <div class="row justify-content-center">
+        <!-- col -->
+        <div class="col-md-6 col-12">
+          <div class="d-flex features pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-analytics text-primary"></i>
+            </div>
+            <div class="flex-1">
+              <h4 class="title">障害調査の長期化</h4>
+              <p class="text-muted para mb-0">
+                過去の変更履歴が分散しており、障害原因の特定に時間がかかる
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+
+        <!-- col -->
+        <div class="col-md-6 col-12">
+          <div class="d-flex features pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-analytics text-primary"></i>
+            </div>
+            <div class="flex-1">
+              <h4 class="title">即時トレース機能</h4>
+              <p class="text-muted para mb-0">
+                障害発生時に時系列で変更履歴を即座に追跡
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+
+        <!-- col -->
+        <div class="col-md-6 col-12">
+          <div class="d-flex features pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-analytics text-primary"></i>
+            </div>
+            <div class="flex-1">
+              <h4 class="title">開通作業のヒューマンエラー</h4>
+              <p class="text-muted para mb-0">
+                手作業による設定ミスや連携不備により、サービス開通が遅延
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+
+        <!-- col -->
+        <div class="col-md-6 col-12">
+          <div class="d-flex features pt-4 pb-4">
+            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+              <i class="uil uil-analytics text-primary"></i>
+            </div>
+            <div class="flex-1">
+              <h4 class="title">自動オーケストレーション</h4>
+              <p class="text-muted para mb-0">
+                オーダー取得から開通まで完全自動化
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+
+      </div><!--end row-->
+
+
+    </div><!--end container-->
+  </section><!--end section-->
+  <!-- End Features -->
+
+  <!-- Card　主な提供サービス -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h3 class="text-center">
+            主な提供サービス
+          </h3>
+        </div>
+        <div class="col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["business"]'>
+          <div class="card blog border-0 work-container work-classic shadow rounded-md overflow-hidden">
+            <img src="images/top-pages/net_work.jpeg" class="img-fluid work-image" alt="">
+            <div class="card-body">
+              <div class="content">
+                <a href="javascript:void(0)" class="badge badge-link bg-primary">Net Work</a>
+                <h5 class="mt-3">
+                  <a href="page-case-detail.html" class="text-dark title" style="font-size:1.3rem;">
+                    2次元時間軸オブジェクトデータベース
+                  </a>
+                </h5>
+                <p class="text-muted">
+                  ネットワークの全履歴を時間軸オブジェクトで集約。設計〜開通〜運用変更までを一元管理。
+                </p>
+                <ul>
+                  <li>
+                    設計書作成工数を最大70%削減
+                  </li>
+                  <li>
+                    障害調査を時系列に即トレース
+                  </li>
+                </ul>
+
+                <!-- ボタン -->
+                <div class="text-center col-12 mt-4 pt-2">
+                  <a href="javascript:void(0)" class="btn btn-primary">
+                    詳細を見る
+                    <i data-feather="arrow-right" class="fea icon-sm"></i>
+                  </a>
+                </div>
+                <!-- ボタン end -->
+
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["marketing"]'>
+          <div class="card blog border-0 work-container work-classic shadow rounded-md overflow-hidden">
+            <img src="images/top-pages/software.jpeg" class="img-fluid work-image" alt="">
+            <div class="card-body">
+              <div class="content">
+                <a href="javascript:void(0)" class="badge badge-link bg-warning">Software</a>
+                <h5 class="mt-3">
+                  <a href="page-case-detail.html" class="text-dark title" style="font-size:1.3rem;">
+                    オーダーオーケストレーションシステム
+                  </a>
+                </h5>
+                <p class="text-muted">
+                  サービスオーダー取得→設計→開通作業を自動連携。外部BSS/OSSともAPI連携可能。
+                </p>
+                <ul>
+                  <li>
+                    開通TATを平均60%短縮
+                  </li>
+                  <li>
+                    ヒューマンエラーを最小化
+                  </li>
+
+                </ul>
+                <!-- ボタン -->
+                <div class="text-center col-12 mt-4 pt-2">
+                  <a href="javascript:void(0)" class="btn btn-primary">
+                    詳細を見る
+                    <i data-feather="arrow-right" class="fea icon-sm"></i>
+                  </a>
+                </div>
+                <!-- ボタン end -->
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </section>
+  <!--end section-->
+
+
+
+
+  <!-- Start Number-->
+  <section class="section pt-0">
+    <div class="container">
+      <div class="col-12 mb-5">
+        <h3 class="text-center">
+          実績・成果指標
+        </h3>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="video-solution-cta position-relative" style="z-index: 1;">
+            <div class="position-relative py-5 rounded" style="background: url('images/it/cta.jpg') top;">
+              <div class="bg-overlay rounded bg-primary bg-gradient" style="opacity: 0.8;"></div>
+
+              <div class="row">
+                <div class="col-md-6 my-4">
+                  <div class="counter-box text-center px-lg-4">
+                    <i class="uil uil-users-alt text-white-50 h2"></i>
+                    <h1 class="mb-0 text-white"><span class="counter-value" data-target="3000">3000</span>+</h1>
+                    <h6 class="counter-head text-white-50">サービスオーダー/年</h6>
+                  </div><!--end counter box-->
+                </div><!--end col-->
+
+                <div class="col-md-6 my-4">
+                  <div class="counter-box text-center px-lg-4">
+                    <i class="uil uil-schedule text-white-50 h2"></i>
+                    <h1 class="mb-0 text-white"><span class="counter-value" data-target="10">10</span>+</h1>
+                    <h6 class="counter-head text-white-50">稼働実績</h6>
+                  </div><!--end counter box-->
+                </div><!--end col-->
+
+                <!-- 
+                <div class="col-md-6 my-4">
+                  <div class="counter-box text-center px-lg-4">
+                    <i class="uil uil-file-check-alt text-white-50 h2"></i>
+                    <h1 class="mb-0 text-white"><span class="counter-value" data-target="151">12</span>+</h1>
+                    <h6 class="counter-head text-white-50">Project Complete</h6>
+                  </div>
+                </div>
+
+                <div class="col-md-6 my-4">
+                  <div class="counter-box text-center px-lg-4">
+                    <i class="uil uil-hard-hat text-white-50 h2"></i>
+                    <h1 class="mb-0 text-white"><span class="counter-value" data-target="98">3</span>+</h1>
+                    <h6 class="counter-head text-white-50">Expert Engineers</h6>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+
+            <!-- カスタマvoice -->
+            <!-- <div class="content mt-md-5 mt-4">
+              <div class="row justify-content-center">
+                <div class="col-lg-12 mt-4">
+                  <div class="tiny-three-item">
+                    <div class="tiny-slide">
+                      <div class="d-flex client-testi m-2">
+                        <img src="images/client/01.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                        <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                          <ul class="list-unstyled mb-0">
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                          </ul>
+                          <p class="text-muted mt-2">" It seems that only fragments of the original text remain in the
+                            Lorem Ipsum texts used today. "</p>
+                          <h6 class="text-primary">- Thomas Israel <small class="text-muted">C.E.O</small></h6>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tiny-slide">
+                      <div class="d-flex client-testi m-2">
+                        <img src="images/client/02.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                        <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                          <ul class="list-unstyled mb-0">
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star-half text-warning"></i></li>
+                          </ul>
+                          <p class="text-muted mt-2">" One disadvantage of Lorum Ipsum is that in Latin certain letters
+                            appear more frequently than others. "</p>
+                          <h6 class="text-primary">- Barbara McIntosh <small class="text-muted">M.D</small></h6>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tiny-slide">
+                      <div class="d-flex client-testi m-2">
+                        <img src="images/client/03.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                        <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                          <ul class="list-unstyled mb-0">
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                          </ul>
+                          <p class="text-muted mt-2">" The most well-known dummy text is the 'Lorem Ipsum', which is
+                            said to have originated in the 16th century. "</p>
+                          <h6 class="text-primary">- Carl Oliver <small class="text-muted">P.A</small></h6>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tiny-slide">
+                      <div class="d-flex client-testi m-2">
+                        <img src="images/client/04.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                        <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                          <ul class="list-unstyled mb-0">
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                          </ul>
+                          <p class="text-muted mt-2">" According to most sources, Lorum Ipsum can be traced back to a
+                            text composed by Cicero. "</p>
+                          <h6 class="text-primary">- Christa Smith <small class="text-muted">Manager</small></h6>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tiny-slide">
+                      <div class="d-flex client-testi m-2">
+                        <img src="images/client/05.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                        <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                          <ul class="list-unstyled mb-0">
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                          </ul>
+                          <p class="text-muted mt-2">" There is now an abundance of readable dummy texts. These are
+                            usually used when a text is required. "</p>
+                          <h6 class="text-primary">- Dean Tolle <small class="text-muted">Developer</small></h6>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tiny-slide">
+                      <div class="d-flex client-testi m-2">
+                        <img src="images/client/06.jpg" class="avatar avatar-small client-image rounded shadow" alt="">
+                        <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
+                          <ul class="list-unstyled mb-0">
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                          </ul>
+                          <p class="text-muted mt-2">" Thus, Lorem Ipsum has only limited suitability as a visual filler
+                            for German texts. "</p>
+                          <h6 class="text-primary">- Jill Webb <small class="text-muted">Designer</small></h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>end col
+              </div>
+            </div> -->
+
+
+            <!-- </div> -->
+
+
+          </div><!--end col-->
+        </div><!--end row -->
+        <div class="feature-posts-placeholder bg-light"></div>
+      </div><!--end container-->
+  </section><!--end section-->
+  <!-- End section -->
+
+
+
+
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+          <a href="#" class="logo-footer">
+            <img src="images/header/iiga-logo-white.png" width="300" alt="">
+          </a>
+          <p class="mt-4">
+            次世代テクノロジーで未来を創造する
+          </p>
+          <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook"
+                  class="fea icon-sm fea-social"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram"
+                  class="fea icon-sm fea-social"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter"
+                  class="fea icon-sm fea-social"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin"
+                  class="fea icon-sm fea-social"></i></a></li>
+          </ul>
+          <!--end icon-->
+        </div>
+        <!--end col-->
+
+        <div class="col-md-3 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <h5 class="text-light footer-head">Menu</h5>
+          <ul class="list-unstyled footer-list mt-4">
+            <li><a href="network.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                ネットワーク管理</a></li>
+            <li><a href="page-services.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                システム開発</a></li>
+            <li><a href="page-team.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                ハードウエア開発</a></li>
+            <li><a href="page-pricing.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Terms of Services</a></li>
+            <li><a href="portfolio-modern-three.html" class="text-foot"><i class="uil uil-angle-right-b ms-1"></i>
+                Privacy Policy</a></li>
+          </ul>
+        </div>
+        <!--end col-->
+
+        <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <h5 class="text-light footer-head">関連企業</h5>
+          <ul class="list-unstyled footer-list mt-4">
+            <li><a href="https://www.xtran.co.jp/" target="_blank" class="text-foot"><i
+                  class="uil uil-angle-right-b ms-1"></i>
+                エクトラ</a></li>
+            <li><a href="https://turing-drive.com/jp/home-ja/" target="_blank" class="text-foot"><i
+                  class="uil uil-angle-right-b ms-1"></i>
+                Turing-自動運転モビリティ</a></li>
+
+          </ul>
+        </div>
+        <!--end col-->
+
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </footer>
+  <!--end footer-->
+  <footer class="footer footer-bar">
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col-sm-12">
+          <div class="text-sm-start">
+            <p class="mb-0">©2021 株式会社　イイガ
+            </p>
+          </div>
+        </div>
+        <!--end col-->
+
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </footer>
+  <!--end footer-->
+  <!-- Footer End -->
+
+  <!-- Back to top -->
+  <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i
+      data-feather="arrow-up" class="icons"></i></a>
+  <!-- Back to top -->
+
+
+
+  <!-- javascript -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- SLIDER -->
+  <script src="js/tiny-slider.js "></script>
+  <script src="js/swiper.min.js"></script>
+  <!-- tobii js -->
+  <script src="js/tobii.min.js "></script>
+  <!-- Icons -->
+  <script src="js/feather.min.js"></script>
+  <!-- Main Js -->
+  <script src="js/plugins.init.js"></script>
+  <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+  <script src="js/app.js"></script>
+  <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+</body>
+
+</html>
